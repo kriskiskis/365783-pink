@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Kristina Vasilevich](https://up.htmlacademy.ru/adaptive/12/user/365783).
-* Наставник: [Илья Мельниченков].
+* Наставник: [Илья Мельниченков](https://htmlacademy.ru/profile/cyxobeu).
 
 ---
 
