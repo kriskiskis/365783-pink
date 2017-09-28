@@ -1,0 +1,13 @@
+$font-normal: OpenSans, Arial, sans-serif;
+$color-font: rgb(40, 54, 69);
+$bgc: rgb(255, 255, 255);
+
+.competition {
+  margin: 0;
+  padding:0;
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-font;
+  background-color: $bgc;
+}

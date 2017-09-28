@@ -1,0 +1,13 @@
+$font-normal: OpenSans, Arial, sans-serif;
+$color-font: rgb(255, 255, 255);
+$bgc: rgb(42, 171, 109);
+
+.form-button {
+  margin: 0 20px;
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-font;
+  background-color: $bgc;
+  border: none;
+}

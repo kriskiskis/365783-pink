@@ -1,0 +1,19 @@
+$font-bold: OpenSans, Arial, sans-serif;
+$color-font: rgb(255, 255, 255);
+$bgc: rgb(29, 38, 49);
+
+.download {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: $font-normal;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $color-font;
+  background-color: $bgc;
+  background-image: url('img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  box-sizing: border-box;
+}

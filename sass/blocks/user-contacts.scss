@@ -1,0 +1,14 @@
+$font-normal: OpenSans, Arial, sans-serif;
+$color-font: rgb(40, 54, 69);
+$bgc: rgb(255, 255, 255);
+
+.user-contacts {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-font;
+  background-color: $bgc;
+  border: none;
+}

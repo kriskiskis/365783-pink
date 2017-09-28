@@ -1,0 +1,14 @@
+$font-normal: OpenSans, Arial, sans-serif;
+$color-font: rgb(255, 255, 255);
+$bgc: rgba(255, 255, 255, 0);
+
+.button {
+  margin: 0;
+  padding: 18px 30px;
+  font-family: $font-normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: $color-font;
+  background-color: $bgc;
+  border: 3px solid $color-font;
+}

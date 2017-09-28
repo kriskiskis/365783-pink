@@ -1,0 +1,19 @@
+$font-normal: OpenSans, Arial, sans-serif;
+$color-font: rgb(255, 255, 255);
+$bgc: rgb(29, 38, 49);
+
+.inside-header {
+  margin: 0;
+  padding: 0 45px;
+  padding-top: 100px;
+  padding-bottom: 55px;
+  font-family: $font-normal;
+  font-size: 24px;
+  line-height: auto;
+  color: $color-font;
+  background-color: $bgc;
+  background-image: url('..img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+}

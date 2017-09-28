@@ -1,0 +1,15 @@
+$font-normal: OpenSans, Arial, sans-serif;
+$color-font: rgb(40, 54, 69);
+$bgc: rgb(255, 255, 255);
+
+.page-footer {
+  margin: 0;
+  padding-top: 45px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: $font-normal;
+  font-size: 24px;
+  line-height: auto;
+  color: $color-font;
+  background-color: $bgc;
+}
