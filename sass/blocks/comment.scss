@@ -1,7 +1,3 @@
-$font: OpenSans, Arial, sans-serif;
-$color-font: rgb(40, 54, 69);
-$bgc: rgb(255, 255, 255);
-
 .comment {
   margin: 0;
   padding-right: 20px;
@@ -11,7 +7,7 @@ $bgc: rgb(255, 255, 255);
   font-family: $font-normal;
   font-size: 14px;
   line-height: 30px;
-  color: $color-font;
-  background-color: $bgc;
+  color: $color-blue;
+  background-color: $color-white;
   box-sizing: border-box;
 }
