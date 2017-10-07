@@ -1,3 +1,23 @@
 .social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__list {
+  display: flex;
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  width: 55px;
+  height: 55px;
+  margin-right: 12px;
+  border: 1px solid rgb(233, 235, 236);
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

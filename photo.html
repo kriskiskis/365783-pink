@@ -3,47 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
 
     <header class="page-header">
 
-      <div class="page-header__logo">
-        <span>Pink</span>
-      </div>
+      <div class="page-header__wrapper">
 
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Открыть меню</button>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="page-header__logo">
+          <span>Pink</span>
+        </div>
+
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button">Открыть меню</button>
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
     </header>
 
     <main class="page-main">
 
       <header class="inside-header">
-        <h1 class="inside-header__title">Фотографии пользователей</h1>
-        <p class="inside-header__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <h1 class="inside-header__title">Фотографии<br> пользователей</h1>
+        <p class="inside-header__description"><span class="inside-header__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span></p>
       </header>
 
       <section class="cards">
         <h2 class="visually-hidden">Опубликованные фотографии</h2>
-        <ul class="cards__list">
-          <li class="cards__item cards__item--panorama">
+        <ul class="cards__list--panorama">
+          <li class="cards__item--panorama">
             <a class="cards__full-size" href="#">
               <img class="cards__picture" src="#" width="320" height="140" alt="Панорама дня">
             </a>
@@ -53,13 +58,15 @@
             <button class="cards__choose">Поставить лайк</button>
             <span class="cards__likes">Нравится: 215</span>
           </li>
+        </ul>
+        <ul class="cards__list">
           <li class="cards__item">
             <a class="cards__full-size" href="#">
               <img class="cards__picture" src="#" width="280" height="180" alt="Опубликованное фото">
             </a>
             <b class="cards__user">Левон</b>
             <time class="cards__publication">(5 часов назад)</time>
-            <p class="cards__note"Вчера он на луну летал, сегодня в руки к нам попал.></p>
+            <p class="cards__note">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <button class="cards__choose">Поставить лайк</button>
             <span class="cards__likes">Нравится: 356</span>
           </li>
@@ -118,53 +125,60 @@
 
       <section class="add-photo">
         <h2 class="visually-hidden">Опубликовать фотографию</h2>
-        <p class="add-photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="add-photo__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         <div class="add-photo__wrapper">
           <img class="add-photo__picture" src="#" width="285" height="375" alt="Ваша фотография">
-          <ul class="add-photo__edit">
+          <div class="add-photo__change">
+           <ul class="add-photo__edit">
             <li class="add-photo__tool add-photo__tool--cut add-photo__tool--active">
-              Обрезка
+              <span class="visually-hidden">Обрезка</span>
               <input class="add-photo__slide" type="range" min="1" max="100" step="1" value="80">
             </li>
             <li class="add-photo__tool add-photo__tool--saturation">
-              Насыщенность
+              <span class="visually-hidden">Насыщенность</span>
               <input class="add-photo__slide" type="range" min="1" max="100" step="1" value="80">
             </li>
             <li class="add-photo__tool add-photo__tool--contrast">
-              Контрастность
+              <span class="visually-hidden">Контрастность</span>
               <input class="add-photo__slide" type="range" min="1" max="100" step="1" value="80">
             </li>
           </ul>
+          <div class="add-photo__buttons">
+           <button class="button add-photo__post">Запостить</button>
+           <button class="button add-photo__cancel">Отмена</button>
+         </div>
+         </div>
         </div>
-        <button class="add-photo__post button">Запостить</button>
-        <button class="add-photo__cancel button">Отмена</button>
+
       </section>
 
     </main>
 
     <footer class="inside-footer">
-      <a class="inside-footer__logo" href="index.html">
-        <img class="inside-footer__picture" src="#" width="65" height="45" alt="Приложение Pink">
-        <b class="inside-footer__name">Pink</b>
-      </a>
+      <div class="inside-footer__wrapper">
+       <a class="inside-footer__logo" href="index.html">
+         <img class="inside-footer__picture" src="#" width="65" height="45" alt="Приложение Pink">
+         <b class="inside-footer__name">Pink</b>
+       </a>
 
-      <div class="inside-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter">Мы в Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook">Мы в Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube">Мы на YouTube</a>
-          </li>
-        </ul>
-      </div>
+       <div class="inside-footer__social social">
+         <ul class="social__list">
+           <li class="social__item">
+             <a class="social__link social__link--twitter"><span class="visually-hidden">Мы в Twitter</span></a>
+           </li>
+           <li class="social__item">
+             <a class="social__link social__link--facebook"><span class="visually-hidden">Мы в Facebook</span></a>
+           </li>
+           <li class="social__item">
+             <a class="social__link social__link--youtube"><span class="visually-hidden">Мы на YouTube</span></a>
+           </li>
+         </ul>
+       </div>
 
-      <div class="inside-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+       <div class="inside-footer__copyright copyright">
+         <b class="copyright__text">Разработано</b>
+         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+       </div>
       </div>
 
     </footer>

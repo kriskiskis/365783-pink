@@ -1,10 +1,167 @@
 .add-photo {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   margin: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0;
   font-family: $font-normal;
   font-size: 14px;
   line-height: 30px;
   color: $color-blue;
   background-color: $color-white;
+  box-sizing: border-box;
+}
+
+.add-photo__title {
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 45px;
+  background-color: $color-white;
+}
+
+.add-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: $color-gray;
+  box-sizing: border-box;
+}
+
+.add-photo__picture {
+  width: 285px;
+  height: 375px;
+  margin: 0;
+  padding: 0;
+}
+
+.add-photo__change {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-photo__edit {
+  display: flex;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.add-photo__tool {
+  border: 1px solid $color-pink;
+}
+
+.add-photo__slide {
+  width: 240px;
+  margin-left: 20px;
+}
+
+.add-photo__tool:nth-child(2) .add-photo__slide,
+.add-photo__tool:last-child .add-photo__slide {
+  display: none;
+}
+
+.add-photo__buttons {
+  width: 280px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.add-photo__post {
+  width: 280px;
+  margin-bottom: 10px;
+  border: 3px solid $color-pink;
+  color: $color-pink;
+  box-sizing: border-box;
+}
+
+.add-photo__cancel {
+  width: 280px;
+  margin-bottom: 40px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .add-photo {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .add-photo__wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 660px;
+    padding-top: 55px;
+  }
+
+  .add-photo__change {
+    width: 310px;
+    justify-content: flex-end;
+  }
+
+  .add-photo__edit {
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  .add-photo__tool {
+    height: 75px;
+  }
+
+  .add-photo__tool:nth-child(2) .add-photo__slide,
+  .add-photo__tool:last-child .add-photo__slide {
+    display: block;
+  }
+
+  .add-photo__buttons {
+    margin-left: auto;
+  }
+
+  .add-photo__post {
+    width: 255px;
+  }
+
+  .add-photo__cancel {
+    width: 255px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-photo {
+    width: 100%;
+  }
+
+  .add-photo__wrapper {
+    justify-content: space-between;
+    width: 940px;
+  }
+
+  .add-photo__change {
+    width: 470px;
+  }
+
+  .add-photo__edit {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .add-photo__buttons {
+    width: 470px;
+    text-align: left;
+  }
+
+  .add-photo__post {
+    display: inline-block;
+    width: 185px;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .add-photo__cancel {
+    display: inline-block;
+    width: 185px;
+  }
 }

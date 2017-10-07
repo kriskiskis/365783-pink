@@ -1,11 +1,116 @@
 .price {
+  display: flex;
+  width: 320px;
   margin: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0;
+  padding-top: 65px;
   font-family: $font-normal;
   font-size: 14px;
   line-height: 30px;
   color: $color-blue;
-  background-color: $color-white;
+  background-color: $color-gray;
   box-sizing: border-box;
+}
+
+.price__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $color-white;
+}
+
+.price__item {
+  width: 280px;
+}
+
+.price__name {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+.price__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.price__value {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
+@media (min-width: $mobile-width) {
+  .price__item {
+    &:nth-child(2),
+    &:last-child {
+      display: none;
+    }
+
+    &--about {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+  .price__list {
+    width: 620px;
+    margin: 0 20px;
+    justify-content: flex-end;
+  }
+
+  .price__item {
+    width: 155px;
+
+    &:nth-child(2),
+    &:last-child {
+      display: block;
+    }
+
+    &--about {
+      display: block;
+      align-self: flex-end;
+    }
+  }
+
+  .price__offer {
+    display: none;
+
+    &--about {
+      display: block;
+    }
+  }
+
+  .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .price__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .price__item {
+    width: 235px;
+  }
 }

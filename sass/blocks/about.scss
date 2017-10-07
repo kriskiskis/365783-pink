@@ -1,12 +1,163 @@
 .about {
-  margin: 0;
-  padding-top: 45px;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
   font-family: $font-normal;
   font-size: 14px;
   line-height: 24px;
   color: $color-blue;
   background-color: $color-gray;
   box-sizing: border-box;
+}
+
+.about__tagline {
+  margin: 0;
+  padding-top: 45px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 115px;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  background-color: $color-white;
+}
+
+.about__tagline span {
+  display: block;
+
+  &:first-child {
+    padding-bottom: 39px;
+  }
+}
+
+.about__list {
+  width: 280px;
+  margin: 0 20px;
+  padding: 0;
+  padding-top: 50px;
+  list-style: none;
+}
+
+.about__item {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.about__picture {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+
+  &--no-filter,
+  &--filter {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: $tablet-width;
+  }
+  .about__tagline {
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+
+  .about__tagline span:first-child {
+    padding-bottom: 0;
+  }
+
+  .about__tagline span:last-child {
+    padding: 0 130px;
+  }
+
+  .about__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about__picture {
+    width: 270px;
+    height: 520px;
+  }
+
+  .about__list {
+    padding: 0;
+    padding-left: 44px;
+  }
+
+  .about__item {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: 100%;
+  }
+  .about__tagline {
+    font-size: 50px;
+    padding-bottom: 70px;
+  }
+
+  .about__tagline span:last-child {
+    padding: 0 268px;
+  }
+
+  .about__wrapper {
+    width: 940px;
+    flex-direction: column-reverse;
+  }
+
+  .about__list {
+    display: flex;
+    width: 940px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about__item {
+    padding: 0 35px;
+    text-align: center;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .about__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .about__picture {
+    width: 180px;
+    height: 335px;
+
+    &--no-filter,
+    &--filter {
+      display: block;
+    }
+  }
+
+  .about__picture-wrapper {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
