@@ -63,6 +63,8 @@
 
   .download__wrapper {
     flex-direction: row-reverse;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .download__description {
@@ -88,11 +90,6 @@
 
   .download__link {
     width: 300px;
-  }
-
-  .download__wrapper {
-    width: 620px;
-    margin: 0 auto;
   }
 }
 
