@@ -9,9 +9,9 @@
   line-height: normal;
   color: $color-white;
   background-color: $color-dark-blue;
-  background-image: url("img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: 50% 50%;
   box-sizing: border-box;
 }

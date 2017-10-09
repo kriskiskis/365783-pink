@@ -11,10 +11,10 @@
   line-height: 24px;
   color: $color-white;
   background-color: $color-dark-blue;
-  background-image: url("img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: 465px auto;
+  background-size: cover;
   box-sizing: border-box;
 }
 
