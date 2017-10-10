@@ -1,4 +1,28 @@
 .main-navigation {
-  margin: 0;
+  width: 240px;
+  margin: 0 auto;
   padding: 0 20px;
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
 }

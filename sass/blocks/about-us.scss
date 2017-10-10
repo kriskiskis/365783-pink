@@ -1,0 +1,45 @@
+.about-us {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 45px;
+  font-family: $font-normal;
+  font-size: 24px;
+  line-height: normal;
+  color: $color-blue;
+  background-color: $color-white;
+}
+
+.about-us__contacts {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 13px;
+}
+
+.about-us__map {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .about-us__map {
+    width: $tablet-width;
+  }
+
+  .about-us__picture {
+    width: 660px;
+    height: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 100%;
+  }
+}

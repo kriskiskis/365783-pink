@@ -1,10 +1,77 @@
 .feeling {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   margin: 0;
-  padding: 40px 20px;
+  padding: 40px 0;
+  padding-top: 50px;
   font-family: $font-normal;
   font-size: 18px;
   line-height: 30px;
   color: $color-blue;
   background-color: $color-white;
   border: none;
+}
+
+.feeling__description {
+  position: relative;
+  top: 40px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-pink;
+}
+
+.feeling__title {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.feeling__story {
+  width: 280px;
+  margin: 0 auto;
+  padding: 17px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid rgb(229, 229, 229);
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .feeling {
+    width: 620px;
+    margin: 0 20px;
+    padding: 50px 0;
+    border: 2px solid rgb(229, 229, 229);
+  }
+
+  .feeling__description {
+    top: 0;
+  }
+
+  .feeling__title {
+    margin: 0;
+    padding: 0 60px;
+  }
+
+  .feeling__story {
+    width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feeling {
+    width: 940px;
+    margin: 0 10px;
+    margin-bottom: 60px;
+  }
+
+  .feeling__story {
+    width: 820px;
+  }
 }

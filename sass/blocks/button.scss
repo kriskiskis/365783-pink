@@ -1,10 +1,14 @@
 .button {
-  margin: 0;
-  padding: 18px 30px;
+  padding: 18px 0;
   font-family: $font-normal;
   font-size: 18px;
   line-height: 18px;
-  color: $color-white;
   background-color: rgba(255, 255, 255, 0);
-  border: 3px solid $color-white;
+  border-radius: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 18px 49px;
+  }
 }

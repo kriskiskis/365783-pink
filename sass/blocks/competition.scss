@@ -1,9 +1,109 @@
 .competition {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
+  padding-bottom: 16px;
   font-family: $font-normal;
   font-size: 18px;
   line-height: 30px;
   color: $color-blue;
   background-color: $color-white;
+}
+
+.competition__data {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.competition__send {
+  width: 280px;
+  margin: 0 auto;
+  padding: 17px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.competition__necessary {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 36px;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.competition__mark {
+  color: $color-pink;
+}
+
+@media (min-width: $tablet-width) {
+  .competition {
+    width: $tablet-width;
+  }
+
+  .competition__user {
+    order: 1;
+  }
+
+  .competition__achievements {
+    order: 4;
+  }
+
+  .competition__contacts {
+    order: 3;
+  }
+
+  .competition__OS {
+    order: 2;
+  }
+
+  .competition__feeling {
+    order: 5;
+  }
+
+  .competition__sending {
+    order: 6;
+
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 20px;
+    margin-top: 70px;
+  }
+
+  .competition__send {
+    width: 300px;
+    margin: 0;
+  }
+
+  .competition__necessary {
+    margin: 0;
+    width: 300px;
+    text-align: right;
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .competition__data {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .competition__sending {
+    width: 940px;
+    margin: 0 10px;
+  }
 }
